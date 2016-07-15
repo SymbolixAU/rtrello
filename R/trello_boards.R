@@ -1,13 +1,11 @@
 #' Trello Boards
 #'
-#' Retreive all boards associated with your project
+#' Retrieve all boards associated with your project
 #'
 #' @import jsonlite
-
 #' @export
-#' @param key string your trello access key
-#' @param token string your trello access token
-trello_boards <- function(key, token){
+#' @param trello trello object containing your key and token
+trello_boards <- function(trello){
 
 }
 
@@ -18,11 +16,12 @@ trello_boards <- function(key, token){
 #'
 #' @export
 #' @param board_id the board id - found in the URL of a given board - https://trello.com/b/board_id/board_name
-#' @param key string your trello access key
-#' @param token string your trello access token
-trello_board <- function(board_id, key, token){
+#' @param trello trello object containing your key and token
+trello_board <- function(board_id, trello){
 
-	jsonlite::fromJSON(paste0("https://api.trello.com/1/boards/", board_id, "/lists?token=", token, "&key=", key))
+	jsonlite::fromJSON(paste0("https://api.trello.com/1/boards/", board_id,
+														"/lists?token=", trello@token,
+														"&key=", trello@key))
 
 }
 

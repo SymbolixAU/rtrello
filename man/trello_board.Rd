@@ -4,14 +4,12 @@
 \alias{trello_board}
 \title{Trello Board}
 \usage{
-trello_board(board_id, key, token)
+trello_board(board_id, trello)
 }
 \arguments{
 \item{board_id}{the board id - found in the URL of a given board - https://trello.com/b/board_id/board_name}
 
-\item{key}{string your trello access key}
-
-\item{token}{string your trello access token}
+\item{trello}{trello object containing your key and token}
 }
 \description{
 Retrieve information for a specific board

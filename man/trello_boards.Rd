@@ -4,14 +4,12 @@
 \alias{trello_boards}
 \title{Trello Boards}
 \usage{
-trello_boards(key, token)
+trello_boards(trello)
 }
 \arguments{
-\item{key}{string your trello access key}
-
-\item{token}{string your trello access token}
+\item{trello}{trello object containing your key and token}
 }
 \description{
-Retreive all boards associated with your project
+Retrieve all boards associated with your project
 }
 
