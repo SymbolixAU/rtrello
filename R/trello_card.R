@@ -9,7 +9,7 @@
 trello_card <- function(card_id, trello){
 
 	jsonlite::fromJSON(paste0("https://api.trello.com/1/cards/", card_id,
-														"fields=name,idList&member_fields=fullName&key=", trello@key,
+														"?fields=name,idList&member_fields=fullName&key=", trello@key,
 														"&token=", trello@token))
 
 }
