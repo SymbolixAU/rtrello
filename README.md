@@ -22,7 +22,7 @@ Get your key
 "https://trello.com/app-key"
 
 Get your token
-"https://trello.com/1/authorize?key=PUTAPPKEYHERE&name=yourname-tasker&expiration=never&scope=read,write"
+"https://trello.com/1/authorize?key=YOUR_APP_KEY&scope=read%2Cwrite&name=YOUR+APP+NAME&expiration=never&response_type=token"
 
 start using
 
