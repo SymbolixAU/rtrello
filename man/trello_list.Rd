@@ -4,7 +4,7 @@
 \alias{trello_list}
 \title{Trello lists}
 \usage{
-trello_list(list_id, trello)
+trello_list(list_id, trello, card_status = c("all", "open", "closed", "none"))
 }
 \arguments{
 \item{list_id}{string list id}
