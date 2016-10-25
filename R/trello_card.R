@@ -10,8 +10,8 @@ trello_card <- function(card_id, trello){
 
 	jsonlite::fromJSON(paste0("https://api.trello.com/1/cards/", card_id,
 														"?fields=all",
+														"&actions=all",
 														"&members=true",
-														#"&member_fields=all",
 														"&checklists=all",
 														"&board=true",
 														"&key=", trello@key,
